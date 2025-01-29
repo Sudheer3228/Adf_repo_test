@@ -1,0 +1,24 @@
+{
+	"name": "DSIN_AzureBlob_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Azure_Blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "AdventureWorks Customer Lookup.csv",
+				"container": "sdrinput"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

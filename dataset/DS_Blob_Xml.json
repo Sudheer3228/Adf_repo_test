@@ -1,0 +1,17 @@
+{
+	"name": "DS_Blob_Xml",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Azure_Blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,42 @@
+{
+	"name": "sdrsetvariable",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "filetype",
+					"value": {
+						"value": "@replace(pipeline().parameters.abc,'sales','' )\r\n",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"abc": {
+				"type": "string",
+				"defaultValue": "dailysales"
+			}
+		},
+		"variables": {
+			"filetype": {
+				"type": "String"
+			},
+			"listoffiles": {
+				"type": "String",
+				"defaultValue": "abcd,sdbh,sajsc,asvsga"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-01-28T12:19:57Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

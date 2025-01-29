@@ -1,0 +1,20 @@
+{
+	"name": "DS_Blob_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Azure_Blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dwsample1-json.json",
+				"container": "sdrinput"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
